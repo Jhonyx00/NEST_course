@@ -72,4 +72,8 @@ export class CarsService {
     this.cars = this.cars.filter((car) => car.id !== id);
     //se filtran todos los autos con id diferente al parametro, quedando todos menos el pasaado por parametro
   }
+
+  fillCarsWithSeedData(cars: Car[]) {
+    this.cars = cars;
+  }
 }
